@@ -1,6 +1,6 @@
 # Ashutosh Maurya — Engineering Portfolio
 
-Recruiter-focused portfolio for Ashutosh Maurya, an electrical engineer working across sensor systems, electronics, hardware testing and measurement automation. The site includes a portrait-led editorial layout, detailed case studies and an interactive synthetic signal-analysis demonstration.
+Recruiter-focused portfolio for Ashutosh Maurya, an electrical engineer working across sensor systems, electronics, hardware testing, machine learning and measurement automation. The site includes a portrait-led editorial layout, detailed case studies, a filterable nine-project atlas and an interactive synthetic signal-analysis demonstration.
 
 ## Preview locally
 
@@ -28,7 +28,7 @@ If you use a different repository name, the site will be published as a project 
 
 - `index.html` — content, structure, metadata and structured data
 - `styles.css` — responsive layout, interaction states and print styles
-- `script.js` — mobile navigation, section effects and the interactive signal-analysis demonstration
+- `script.js` — mobile navigation, project filtering, section effects and the interactive signal-analysis demonstration
 - `assets/ashutosh-maurya-profile.jpg` — optimised display portrait and social-preview image
 - `favicon.svg` — browser icon
 - `robots.txt` and `sitemap.xml` — search-engine discovery
