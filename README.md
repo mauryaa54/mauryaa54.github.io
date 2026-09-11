@@ -29,6 +29,7 @@ If you use a different repository name, the site will be published as a project 
 - `index.html` — content, structure, metadata and structured data
 - `styles.css` — responsive layout, interaction states and print styles
 - `script.js` — mobile navigation, active-section state and automatic copyright year
+- `assets/ashutosh-maurya-profile.jpg` — optimised display portrait and social-preview image
 - `favicon.svg` — browser icon
 - `robots.txt` and `sitemap.xml` — search-engine discovery
 - `.nojekyll` — serves the static files directly on GitHub Pages
@@ -36,7 +37,7 @@ If you use a different repository name, the site will be published as a project 
 ## Pre-publication checklist
 
 - Verify all dates, tools and project claims against the latest CV.
-- Confirm the email, LinkedIn and GitHub links.
+- Confirm the email, LinkedIn and GitHub links, and that the profile photograph is approved for public use.
 - Check that no confidential employer material, proprietary images, internal documents or restricted measurement data is included.
 - Test the live site on both desktop and mobile after deployment.
 - Add a PDF CV only if it is current and contains no private address or unnecessary personal data.

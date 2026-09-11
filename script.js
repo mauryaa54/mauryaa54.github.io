@@ -26,6 +26,10 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 720) setMenuState(false);
+});
+
 const sectionLinks = [...document.querySelectorAll('#primary-nav a[href^="#"]')];
 const sections = sectionLinks
   .map((link) => document.querySelector(link.getAttribute('href')))
@@ -44,6 +48,24 @@ if ('IntersectionObserver' in window) {
   }, { rootMargin: '-35% 0px -55% 0px' });
 
   sections.forEach((section) => observer.observe(section));
+}
+
+const revealItems = [...document.querySelectorAll('[data-reveal]')];
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (reduceMotion || !('IntersectionObserver' in window)) {
+  revealItems.forEach((item) => item.classList.add('is-visible'));
+} else {
+  document.body.classList.add('reveal-ready');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      revealObserver.unobserve(entry.target);
+    });
+  }, { threshold: 0.12 });
+
+  revealItems.forEach((item) => revealObserver.observe(item));
 }
 
 const year = document.querySelector('#year');
