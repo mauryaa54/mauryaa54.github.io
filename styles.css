@@ -373,12 +373,12 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
   h1 { font-size: clamp(3rem, 13vw, 5.4rem); }
   .hero-mini-proof { grid-template-columns: 1fr; gap: .8rem; }
   .hero-mini-proof div { padding-bottom: .8rem; border-bottom: 1px solid rgba(255,255,255,.1); }
-  .portrait-stage { min-height: 0; padding: 2rem 0 1rem; display: flex; flex-direction: column; gap: .8rem; }
+  .portrait-stage { min-height: 560px; padding: 0; display: grid; place-items: center; }
   .portrait-card { width: min(84%, 360px); }
   .portrait-orbit { display: none; }
-  .floating-card { position: relative; top: auto; right: auto; bottom: auto; left: auto; width: min(84%, 360px); }
-  .floating-card-top { align-self: flex-start; margin-left: 2rem; }
-  .floating-card-bottom { align-self: flex-end; margin-right: 2rem; }
+  .floating-card { position: absolute; width: auto; max-width: calc(100% - 2rem); }
+  .floating-card-top { top: 15%; left: 0; margin: 0; }
+  .floating-card-bottom { right: 0; bottom: 0; margin: 0; }
   .section { width: min(100% - 2rem, 1180px); padding: 6rem 0; }
   .split-intro { grid-template-columns: 1fr; gap: 1.2rem; }
   .section-intro h2, .lab-intro h2, .contact h2 { font-size: clamp(2.5rem, 11vw, 4.5rem); }
@@ -407,11 +407,12 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
   .hero-actions { align-items: stretch; }
   .hero-actions .button { flex: 1 1 100%; }
   .text-link { text-align: center; }
-  .portrait-stage { min-height: 0; }
+  .portrait-stage { min-height: 470px; }
   .portrait-card { width: 82%; }
+  .portrait-meta { bottom: 2rem; }
   .floating-card { padding: .7rem .8rem; }
-  .floating-card-top { margin-left: .5rem; }
-  .floating-card-bottom { margin-right: .5rem; }
+  .floating-card-top { top: 10%; left: .5rem; }
+  .floating-card-bottom { right: .5rem; bottom: 0; }
   .built-across i { display: none; }
   .built-across strong { width: calc(50% - .7rem); text-align: center; }
   .metric-grid { grid-template-columns: 1fr; }
