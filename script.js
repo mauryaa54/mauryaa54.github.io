@@ -65,6 +65,36 @@ if (reduceMotion || !('IntersectionObserver' in window)) {
 const year = document.querySelector('#year');
 if (year) year.textContent = String(new Date().getFullYear());
 
+const projectFilters = [...document.querySelectorAll('.project-filter')];
+const projectCards = [...document.querySelectorAll('.atlas-card')];
+const projectFilterStatus = document.querySelector('#project-filter-status');
+
+projectFilters.forEach((button) => {
+  button.addEventListener('click', () => {
+    const selectedCategory = button.dataset.filter || 'all';
+    let visibleProjects = 0;
+
+    projectFilters.forEach((candidate) => {
+      const active = candidate === button;
+      candidate.classList.toggle('is-active', active);
+      candidate.setAttribute('aria-pressed', String(active));
+    });
+
+    projectCards.forEach((card) => {
+      const visible = selectedCategory === 'all' || card.dataset.category === selectedCategory;
+      card.hidden = !visible;
+      if (visible) visibleProjects += 1;
+    });
+
+    if (projectFilterStatus) {
+      const categoryLabel = selectedCategory === 'all'
+        ? 'all'
+        : button.textContent.replace(/\d+/g, '').trim().toLowerCase();
+      projectFilterStatus.textContent = `Showing ${visibleProjects} ${categoryLabel} project${visibleProjects === 1 ? '' : 's'}.`;
+    }
+  });
+});
+
 const signalCanvas = document.querySelector('#signal-canvas');
 const spectrumCanvas = document.querySelector('#spectrum-canvas');
 const frequencyInput = document.querySelector('#frequency');
