@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AM">
-  <rect width="64" height="64" rx="10" fill="#071521"/>
-  <path d="M13 45 27 17h6l5.6 11.5L44 17h7v28h-6V27.5L38.7 40h-.5L29.8 23 19.5 45H13Z" fill="#18d4cf"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Signal and circuit logo">
+  <path d="M0 0h52l12 12v52H12L0 52Z" fill="#071521"/>
+  <path d="M11 12v40h42" fill="none" stroke="#294555" stroke-width="2"/>
+  <path d="M11 39h10l5-19 9 34 8-26 6 11h6" fill="none" stroke="#18d4cf" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="11" cy="39" r="3.5" fill="#f5f8fa"/>
+  <circle cx="55" cy="39" r="3.5" fill="#f5f8fa"/>
 </svg>
