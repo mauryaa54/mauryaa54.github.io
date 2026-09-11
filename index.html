@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio of Ashutosh Maurya, an electrical engineer specialising in sensor systems, electronics, hardware testing and measurement automation." />
+    <meta name="description" content="Portfolio of Ashutosh Maurya, an electrical engineer specialising in sensor systems, electronics, hardware testing, machine learning and measurement automation." />
     <meta name="theme-color" content="#1746d1" />
     <meta name="author" content="Ashutosh Maurya" />
     <meta name="robots" content="index, follow" />
@@ -40,7 +40,7 @@
           "https://www.linkedin.com/in/ashutosh-maurya-/",
           "https://github.com/mauryaa54"
         ],
-        "knowsAbout": ["Sensor systems", "PCB development", "Hardware testing", "Measurement automation", "MEMS", "FPGA"]
+        "knowsAbout": ["Sensor systems", "PCB development", "Hardware testing", "Measurement automation", "MEMS", "FPGA", "Machine learning", "LTspice", "Particle swarm optimisation"]
       }
     </script>
   </head>
@@ -78,7 +78,7 @@
         </button>
 
         <nav id="primary-nav" aria-label="Primary navigation">
-          <a href="#work">Work</a>
+          <a href="#work">Projects</a>
           <a href="#lab">Signal lab</a>
           <a href="#experience">Experience</a>
           <a href="#skills">Capabilities</a>
@@ -157,7 +157,7 @@
         <div class="metric-grid">
           <article data-reveal><strong>13</strong><span>Coils handled by a custom multi-channel test PCB</span></article>
           <article data-reveal><strong>2</strong><span>Independent excitation paths compared in the thesis workflow</span></article>
-          <article data-reveal><strong>4</strong><span>Selected engineering case studies across hardware and research</span></article>
+          <article data-reveal><strong>5</strong><span>Public machine-learning workflows spanning regression to decision trees</span></article>
           <article data-reveal><strong>2.0</strong><span>Final grade · M.Sc. Sensor Systems Technology</span></article>
         </div>
       </section>
@@ -210,9 +210,9 @@
           </article>
           <article class="case-card" data-reveal>
             <div class="case-top"><span>/ 03</span><span>Embedded hardware</span></div>
-            <h3>ESP32 multilayer PCB design</h3>
-            <p>Designed a complete embedded board with disciplined power distribution, decoupling, component placement and manufacturability checks.</p>
-            <dl><div><dt>Designed</dt><dd>Schematic & multilayer layout</dd></div><div><dt>Created</dt><dd>Components, footprints & libraries</dd></div><div><dt>Checked</dt><dd>ERC · DRC · mechanical fit</dd></div></dl>
+            <h3>ESP32-S3 multilayer PCB design exercise</h3>
+            <p>Completed a guided end-to-end Altium exercise covering power distribution, decoupling, component placement, routing and manufacturability checks.</p>
+            <dl><div><dt>Completed</dt><dd>Schematic & multilayer layout</dd></div><div><dt>Created</dt><dd>Components, footprints & libraries</dd></div><div><dt>Checked</dt><dd>ERC · DRC · mechanical fit</dd></div></dl>
             <ul class="tags"><li>Altium</li><li>ESP32</li><li>PCB layout</li><li>DFM</li></ul>
           </article>
           <article class="case-card" data-reveal>
@@ -222,6 +222,130 @@
             <dl><div><dt>Implemented</dt><dd>Vehicle paths & turn decisions</dd></div><div><dt>Integrated</dt><dd>Real-time GPS streams</dd></div><div><dt>Delivered</dt><dd>Reusable simulation workflows</dd></div></dl>
             <ul class="tags"><li>ROS2</li><li>Gazebo</li><li>CARLA</li><li>C++</li></ul>
           </article>
+        </div>
+
+        <div class="project-atlas" id="project-atlas">
+          <div class="atlas-heading" data-reveal>
+            <div>
+              <p class="section-label">/ Project atlas</p>
+              <h2>More ways I turn theory into <em>working evidence.</em></h2>
+            </div>
+            <p>A broader view of academic and self-driven work across sensor electronics, optimisation, machine learning and digital simulation.</p>
+          </div>
+
+          <div class="project-filters" role="group" aria-label="Filter project categories" data-reveal>
+            <button class="project-filter is-active" type="button" data-filter="all" aria-pressed="true">All projects <span>09</span></button>
+            <button class="project-filter" type="button" data-filter="hardware" aria-pressed="false">Hardware <span>02</span></button>
+            <button class="project-filter" type="button" data-filter="ml" aria-pressed="false">ML & optimisation <span>04</span></button>
+            <button class="project-filter" type="button" data-filter="simulation" aria-pressed="false">Simulation <span>03</span></button>
+          </div>
+          <p class="sr-only" id="project-filter-status" aria-live="polite">Showing all 9 projects.</p>
+
+          <div class="atlas-grid">
+            <article class="atlas-card atlas-card-featured" data-category="hardware" data-reveal>
+              <div class="atlas-visual visual-capacitor" aria-hidden="true"><i></i><i></i><span>ΔC → VDC</span></div>
+              <div class="atlas-card-body">
+                <div class="atlas-meta"><span>Sensor electronics</span><span>Academic · 2024–25</span></div>
+                <h3>Differential capacitive accelerometer</h3>
+                <p>Designed a capacitor–spring sensing system and an NE555-based conditioning circuit that converts differential capacitance into a DC output proportional to acceleration.</p>
+                <div class="atlas-proof"><strong>What I verified</strong><span>Capacitance behaviour, electronics response and design iterations through measurement feedback.</span></div>
+                <ul class="tags"><li>Capacitive sensing</li><li>NE555</li><li>PCB</li><li>Signal conditioning</li></ul>
+              </div>
+            </article>
+
+            <article class="atlas-card atlas-card-featured" data-category="ml" data-reveal>
+              <div class="atlas-visual visual-pso" aria-hidden="true"><i></i><i></i><i></i><i></i><span>max Σ revenue</span></div>
+              <div class="atlas-card-body">
+                <div class="atlas-meta"><span>Optimisation</span><span>Academic · 2024–25</span></div>
+                <h3>BioPower optimisation system</h3>
+                <p>Developed a Particle Swarm Optimisation workflow for operating a biogas plant with a combined heat and power unit under changing gas production and electricity prices.</p>
+                <div class="atlas-proof"><strong>Optimisation frame</strong><span>Maximise financial return while respecting production rates, gas-storage limits and operating constraints.</span></div>
+                <ul class="tags"><li>PSO</li><li>Optimisation</li><li>CHP</li><li>Constraint simulation</li></ul>
+              </div>
+            </article>
+
+            <article class="atlas-card" data-category="simulation" data-reveal>
+              <div class="atlas-visual visual-transfer" aria-hidden="true"><svg viewBox="0 0 260 90"><path d="M8 14H250M8 45H250M8 76H250"/><path class="signal-a" d="M8 18C76 18 82 20 112 34S140 75 178 75H250"/><path class="signal-b" d="M8 76L250 12"/></svg><span>VIN / VOUT</span></div>
+              <div class="atlas-card-body">
+                <div class="atlas-meta"><span>LTspice</span><span>Academic simulation</span></div>
+                <h3>Transistor-level TTL inverter</h3>
+                <p>Built transistor-, diode- and 74HCT/TTL-based logic circuits, then used transient and DC transfer analyses to examine switching behaviour.</p>
+                <div class="atlas-proof"><strong>Verification</strong><span>Compared input/output waveforms and the transfer characteristic with expected logic response.</span></div>
+                <ul class="tags"><li>LTspice</li><li>TTL</li><li>Transient</li><li>DC analysis</li></ul>
+              </div>
+            </article>
+
+            <article class="atlas-card" data-category="simulation" data-reveal>
+              <div class="atlas-visual visual-fsm" aria-hidden="true"><b>S0</b><i></i><b>S1</b><i></i><b>S2</b><span>request → timer → output</span></div>
+              <div class="atlas-card-body">
+                <div class="atlas-meta"><span>Digital systems</span><span>Final lab project</span></div>
+                <h3>FSM/ROM crosswalk controller</h3>
+                <p>Designed a traffic-light controller with pedestrian requests, timed transitions and ROM-programmed outputs, extended with alarm-driven yellow blinking.</p>
+                <div class="atlas-proof"><strong>System design</strong><span>FSM states, registers, timing, combinational output logic and functional verification.</span></div>
+                <ul class="tags"><li>FSM</li><li>ROM logic</li><li>Registers</li><li>Verification</li></ul>
+              </div>
+            </article>
+
+            <article class="atlas-card" data-category="ml" data-reveal>
+              <div class="atlas-visual visual-regression" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><svg viewBox="0 0 260 90"><path d="M8 78C62 68 106 57 145 40S211 19 252 10"/></svg><span>price = f(features)</span></div>
+              <div class="atlas-card-body">
+                <div class="atlas-meta"><span>Machine learning</span><span>Public repository · A2</span></div>
+                <h3>Property-price regression workflow</h3>
+                <p>Explored ImmoScout24 data from cleaning and feature engineering through linear, Ridge and Lasso regression with reusable scikit-learn pipelines.</p>
+                <div class="atlas-proof"><strong>Model discipline</strong><span>Outlier handling, encoding, missing values, cross-validation and hyperparameter optimisation.</span></div>
+                <ul class="tags"><li>scikit-learn</li><li>EDA</li><li>Ridge/Lasso</li><li>Cross-validation</li></ul>
+              </div>
+            </article>
+
+            <article class="atlas-card" data-category="ml" data-reveal>
+              <div class="atlas-visual visual-pca" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><span>high-D → PC₁ + PC₂</span></div>
+              <div class="atlas-card-body">
+                <div class="atlas-meta"><span>Machine learning</span><span>Public repository · A3</span></div>
+                <h3>PCA & principal-component regression</h3>
+                <p>Implemented PCA through eigendecomposition and scikit-learn, then applied principal-component regression to IRIS and power-plant datasets.</p>
+                <div class="atlas-proof"><strong>Focus</strong><span>Dimensionality reduction, variance interpretation and regression in a transformed feature space.</span></div>
+                <ul class="tags"><li>PCA</li><li>NumPy</li><li>IRIS</li><li>CCPP</li></ul>
+              </div>
+            </article>
+
+            <article class="atlas-card" data-category="ml" data-reveal>
+              <div class="atlas-visual visual-classify" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><span>KNN · TREE · LOGIT</span></div>
+              <div class="atlas-card-body">
+                <div class="atlas-meta"><span>Machine learning</span><span>Public repository · A4–A5</span></div>
+                <h3>Classification model benchmarks</h3>
+                <p>Compared logistic regression, K-nearest neighbours and decision trees across binary and multiclass classification tasks.</p>
+                <div class="atlas-proof"><strong>Datasets</strong><span>Breast-cancer diagnosis and steel-fault classification.</span></div>
+                <ul class="tags"><li>Logistic regression</li><li>KNN</li><li>Decision trees</li><li>Classification</li></ul>
+              </div>
+            </article>
+
+            <article class="atlas-card" data-category="hardware" data-reveal>
+              <div class="atlas-visual visual-protection" aria-hidden="true"><b>°C</b><b>A</b><b>V</b><span>monitor → protect → report</span></div>
+              <div class="atlas-card-body">
+                <div class="atlas-meta"><span>IoT & protection</span><span>Academic · 2021</span></div>
+                <h3>Smart industrial protection switch</h3>
+                <p>Built a remotely operated switching system with monitoring and protection against overheating, short-circuit current and over-voltage.</p>
+                <div class="atlas-proof"><strong>System scope</strong><span>Electrical protection logic combined with online operation and remote status monitoring.</span></div>
+                <ul class="tags"><li>IoT</li><li>Protection</li><li>Monitoring</li><li>Embedded control</li></ul>
+              </div>
+            </article>
+
+            <article class="atlas-card" data-category="simulation" data-reveal>
+              <div class="atlas-visual visual-motor" aria-hidden="true"><i></i><b>3Φ</b><span>control → drive → motor</span></div>
+              <div class="atlas-card-body">
+                <div class="atlas-meta"><span>Power electronics</span><span>Internship · 2021</span></div>
+                <h3>EV & motor-control simulations</h3>
+                <p>Modelled electric-vehicle systems, DC motor speed control and AC induction motor control, then built an Arduino-based induction-motor control project.</p>
+                <div class="atlas-proof"><strong>Tools</strong><span>MATLAB/Simulink, control-system models and sensor-circuit concepts for EV applications.</span></div>
+                <ul class="tags"><li>MATLAB</li><li>Simulink</li><li>Arduino</li><li>Motor control</li></ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="atlas-footer" data-reveal>
+            <p><strong>Want to inspect the code?</strong> The machine-learning exercises are documented in a public GitHub repository.</p>
+            <a class="button button-blue" href="https://github.com/mauryaa54/Machine-learning-Projects" target="_blank" rel="noreferrer">View ML repository <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
       </section>
 
@@ -295,7 +419,7 @@
         <div class="skill-grid">
           <article data-reveal><span>01</span><h3>Electronics & hardware</h3><p>PCB design · Altium · KiCad · ESP32 · Arduino · MEMS · piezoelectric transducers · hardware bring-up</p></article>
           <article data-reveal><span>02</span><h3>Measurement & automation</h3><p>Oscilloscope · PicoScope · SMU · LDV · SCPI · Ethernet/TCP-IP · CAN · calibration · test automation</p></article>
-          <article data-reveal><span>03</span><h3>Simulation & data analysis</h3><p>Python · NumPy · Pandas · Matplotlib · FFT · signal processing · MATLAB/Simulink · optimisation</p></article>
+          <article data-reveal><span>03</span><h3>Simulation, ML & data analysis</h3><p>Python · scikit-learn · NumPy · Pandas · FFT · LTspice · MATLAB/Simulink · PSO · cross-validation</p></article>
           <article data-reveal><span>04</span><h3>Tools & platforms</h3><p>VHDL · Vivado · Vitis · Git · Linux · ROS2 · Gazebo · CARLA · CHAMP · embedded workflows</p></article>
           <article data-reveal><span>05</span><h3>Research strengths</h3><p>Experimental design · root-cause analysis · repeatability · reference measurements · documentation · interdisciplinary collaboration</p></article>
         </div>
